@@ -16,6 +16,9 @@ import WelcomeSection from './WelcomeSection.vue'
     id="repo"
   >
     <h1 class="text-xl md:text-2xl lg:text-3xl text-teal-400 font-semibold">Repository</h1>
-    <Repository />
+    <Suspense>
+
+      <Repository />
+    </Suspense>
   </section>
 </template>

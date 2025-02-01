@@ -56,7 +56,7 @@ import ImageMe from './assets/me.png'
       class="w-full min-h-screen transition-all duration-300 ease-in-out pr-3 pl-7 py-2 flex flex-col relative md:overflow-x-hidden md:overflow-y-scroll scroll-smooth"
     >
       <ScrollBar />
-      <RightSide class="scroll-smooth md:snap-y md:snap-mandatory" />
+      <RightSide />
     </section>
   </main>
 </template>

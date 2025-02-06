@@ -21,7 +21,7 @@ import ImageMe from './assets/me.png'
       </div>
     </div>
 
-    <section
+    <div
       class="w-full md:w-[12.3em] lg:w-[14.2em] md:min-h-screen text-white text-sm md:text-base transition-all duration-300 ease-in-out flex flex-col md:items-center px-2 py-5 md:justify-center"
     >
       <div
@@ -51,12 +51,12 @@ import ImageMe from './assets/me.png'
         >
       </div>
       <SocialSection class="hidden md:block" />
-    </section>
-    <section
-      class="w-full min-h-screen transition-all duration-300 ease-in-out pr-3 pl-7 py-2 flex flex-col relative md:overflow-x-hidden md:overflow-y-scroll scroll-smooth"
+    </div>
+    <div
+      class="w-full min-h-screen transition-all duration-300 ease-in-out pr-3 pl-7 py-2 flex flex-col relative md:overflow-x-hidden md:overflow-y-scroll scroll-smooth scroll-px-1"
     >
       <ScrollBar />
-      <RightSide />
-    </section>
+      <RightSide class="scroll-smooth" />
+    </div>
   </main>
 </template>

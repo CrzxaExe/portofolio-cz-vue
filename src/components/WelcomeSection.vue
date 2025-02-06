@@ -22,9 +22,10 @@ export default {
     <!-- CV pop up -->
     <div
       :class="[cvActive ? 'fixed' : 'hidden']"
-      class="w-[24em] md:w-[27em] lg:w-[30em] h-[50vh] bg-[#242424] py-4 px-5 z-[200] top-[20vh] left-[8vw] lg:left-auto right-auto md:translate-x-1/2"
+      class="w-[24em] md:w-[27em] lg:w-[30em] h-[50vh] bg-[#242424] py-4 px-5 z-[200] top-[20vh] left-[8vw] lg:left-auto right-auto md:translate-x-1/2 rounded-lg"
+      id="cv"
     >
-      <div class="w-full flex flex-row justify-between relative">
+      <div class="w-full flex flex-row justify-between relative" id="cvheader">
         <h1 class="font-bold text-xl lg:text-2xl text-teal-400">CV</h1>
         <button class="text-white aspect-square text-base font-bold" @click="cvActive = false">
           X
@@ -54,7 +55,7 @@ export default {
 
     <div class="mb-1 md:mb-5 -mt-8 md:mt-9 block text-lg">
       <p class="text-slate-300">I have passion on</p>
-      <b class="text-xl lg:text-2xl">Web Developer | Mobile Developer</b>
+      <b class="text-xl lg:text-2xl">Web Developer | Mobile Developer | Artist</b>
 
       <span
         class="text-slate-200 block cursor-default text-base md:text-xl italic mt-3 md:mt-9 mb-8 bg-teal-300/20 w-full lg:w-fit outline-none px-3 py-2 md:py-5 rounded-md font-semibold"

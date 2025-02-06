@@ -16,7 +16,7 @@ export default {
   <div>
     <span class="text-teal-400 font-bold text-xl md:text-2xl mb-2 block">TechStack</span>
     <ul
-      class="grid grid-cols-8 md:flex md:flex-row max-w-full w-fit gap-2 overflow-x-hidden md:overflow-x-visible"
+      class="grid grid-cols-8 md:flex md:flex-row max-w-full w-fit gap-2"
     >
       <li
         class="flex items-center justify-center p-0 text-2xl aspect-square w-full rounded-lg hover:text-teal-400 transition-all duration-300 ease-in-out group relative"

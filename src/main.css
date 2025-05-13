@@ -10,6 +10,11 @@
   If we ever want to remove these styles, we need to add an explicit border
   color utility to any element that depends on these defaults.
 */
+@font-face {
+  font-family: "Valorant";
+  src: url("./assets/fonts/VALORANT-Regular.woff2");
+}
+
 @layer base {
   *,
   ::after,
@@ -26,4 +31,31 @@ html:-webkit-scrollbar {
 
 html {
   scroll-behavior: smooth;
+}
+
+@theme {
+  --animate-name-join: nameJoin 1s ease-in-out;
+  --font-valorant: "Valorant"
+}
+
+.floating-anim {
+  animation-name: scroll-flying;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+@keyframes scroll-flying {
+ 0% {
+  transform: translateY(0%);
+ }
+ 25% {
+  transform: translateY(5%);
+ }
+ 50% {
+  transform: translateY(20%);
+ }
+ 100% {
+  transform: translateY(0%);
+ }
 }

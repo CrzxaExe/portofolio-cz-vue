@@ -8,7 +8,14 @@ const profile = {
         province: "Central Jawa",
         regency: "Kebumen"
     },
-    religion: "Islam"
+    religion: "Islam",
+    certificate: {
+        preview: "https://media.licdn.com/dms/image/v2/D562DAQFMcaxlC8TxvA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1736634654555?e=1747731600&v=beta&t=1UU6coW79wl4BqNHgio30HTLyqff4Dn5A4E2NpTYsow",
+        previewName: "UI/UX Design Training",
+        previewOrganization: "HMIF Unseod",
+        previewGet: 2025,
+        folder: "",
+    }
 }
 
 async function getData() {
@@ -40,12 +47,12 @@ function getYearOld(birthDate) {
 
 <template>
     <Suspense>
-        <section class="min-h-screen px-4 lg:px-[6rem] pt-6 lg:pt-[8.5em] pb-4 lg:pb-[6rem] flex flex-col lg:flex-row gap-4 lg:gap-8" id="about">
+        <section class="min-h-screen px-4 lg:px-[6rem] pt-6 lg:pt-[8.5em] pb-4 lg:pb-[5rem] flex flex-col lg:flex-row gap-4 lg:gap-8" id="about">
             <div class="w-full lg:w-[20rem] lg:min-h-full flex flex-col gap-4 lg:gap-8 lg:basis-180">
                 <div class="w-full lg:min-h-[30%] bg-[#242424]/30 rounded-xl p-4 flex flex-row gap-3 shadow-lg">
                     <div class="w-[30%] flex flex-col gap-3">
-                        <img :src="data.avatar_url" alt="Logo" class="h-[78%] aspect-square rounded-xl">
-                        <span class="block h-[22%] rounded-lg w-full bg-[#242424] px-5 py-4 text-base lg:text-xl text-center font-semibold">{{ data.public_repos }} Total Repo</span>
+                        <img :src="data.avatar_url" alt="Logo" class="h-[78%] aspect-square rounded-xl object-cover">
+                        <span class="h-[22%] rounded-lg w-full bg-[#242424] px-5 py-4 text-sm lg:text-xl font-semibold flex justify-center items-center"><span>{{ data.public_repos }} Total Repo</span></span>
                     </div>
                     <div class="w-[70%]">
                         <h1 class="text-xl lg:text-3xl font-semibold">{{ data.name }}</h1>
@@ -84,19 +91,21 @@ function getYearOld(birthDate) {
             </div>
             <div class="w-full lg:w-[20rem] lg:min-h-full bg-[#242424] rounded-xl lg:basis-280 p-8 shadow-lg"></div>
             <div class="w-full lg:w-[20rem] lg:min-h-full flex flex-col gap-4 lg:gap-8 lg:basis-140">
-                <div class="w-full h-[55%] bg-[#242424]/50 rounded-xl p-8 shadow-lg">
-                    <h1 class="text-2xl lg:text-3xl font-bold">Certificates</h1>
+                <div class="w-full h-[55%] bg-[#242424]/45 rounded-xl p-8 shadow-lg">
+                    <h1 class="text-2xl lg:text-3xl font-bold">Latest Certificate</h1>
 
-                    <div class="w-full aspect-video bg-white mt-2 rounded-lg select-none"></div>
-                    <span class="text-lg lg:text-2xl font-semibold mt-2 text-gray-300 block">Name</span>
-                    <span class="text-base lg:text-lg font-light -mt-1 text-gray-400 block">2025</span>
+                    <div class="w-full aspect-video bg-white mt-2 rounded-lg select-none">
+                        <img :src="profile.certificate.preview" alt="certificate" class="w-full object-cover aspect-video">
+                    </div>
+                    <span class="text-lg lg:text-2xl font-semibold mt-2 text-gray-300 block">{{ profile.certificate.previewName }}</span>
+                    <span class="text-base lg:text-lg font-light -mt-1 text-gray-400 block">{{ profile.certificate.previewOrganization }} - {{ profile.certificate.previewGet }}</span>
                     
                     <div class="w-full flex flex-row lg:flex-col mt-4 gap-2">
-                        <a href="#" class="bg-teal-400 text-gray-800 hover:text-gray-400 font-semibold rounded-lg w-full text-center py-3 text-lg hover:bg-[#343434] transition-all duration-300 ease-in-out focus:bg-cyan-700">Preview</a>
+                        <a :href="profile.certificate.preview" target="_blank" class="bg-teal-400 text-gray-800 hover:text-gray-400 font-semibold rounded-lg w-full text-center py-3 text-lg hover:bg-[#343434] transition-all duration-300 ease-in-out focus:bg-cyan-700">Preview</a>
                         <a href="#" class="bg-teal-400 text-gray-800 hover:text-gray-400 font-semibold rounded-lg w-full text-center py-3 text-lg hover:bg-[#343434] transition-all duration-300 ease-in-out focus:bg-cyan-700">See All</a>
                     </div>
                 </div>
-                <div class="w-full h-[45%] bg-[#242424]/60 backdrop-blur-lg rounded-xl p-8 shadow-lg">
+                <div class="w-full h-[45%] bg-[#242424]/70 backdrop-blur-lg rounded-xl p-8 shadow-lg">
                     <h1 class="text-2xl lg:text-3xl font-bold">CV</h1>
                     
                     <div class="w-full aspect-video bg-white mt-2 rounded-lg select-none"></div>

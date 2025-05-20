@@ -50,7 +50,7 @@ import TechStack from './TechStack.vue';
       </div>
     </div>
 
-    <div class="mt-[2.8rem] lg:mt-[3.8rem] w-full max-w-[86rem] bg-[#242424]/0 sm:bg-[#242424]/20 md:bg-[#242424]/45 lg:bg-[#242424]/70 mx-auto sm:shadow-xl px-4 lg:px-5 lg:py-5 transition-all duration-300 ease-in-out">
+    <div class="mt-[2.3rem] lg:mt-[3.8rem] w-full max-w-[86rem] bg-[#242424]/0 sm:bg-[#242424]/20 md:bg-[#242424]/45 lg:bg-[#242424]/70 mx-auto sm:shadow-xl px-4 lg:px-5 lg:py-5 transition-all duration-300 ease-in-out">
       <TechStack/>
     </div>
 

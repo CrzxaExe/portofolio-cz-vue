@@ -74,7 +74,7 @@ function getYearOld(birthDate) {
                     <span class="block bg-white w-full h-[1px] mt-4"></span>
                     
                     <p class="text-sm lg:text-base text-gray-200 block mt-4 whitespace-pre-line font-mono leading-5">
-                        Birth &nbsp; &nbsp;: 3 Des 2025<br />
+                        Birth &nbsp; &nbsp;: 3 Des 2005<br />
                         Old &nbsp; &nbsp; &nbsp;: {{ getYearOld(profile.birth) }} Years<br /><br />
 
                         Country&nbsp; : {{ profile.location.country  }}<br />

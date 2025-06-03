@@ -108,7 +108,7 @@
                 </g>
             </svg>
         </div>
-        <div class="opacity-15">
+        <div>
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="rust">
                     <g id="rust_2">

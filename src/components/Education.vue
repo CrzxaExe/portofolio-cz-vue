@@ -1,4 +1,5 @@
 <script setup>
+import { motion } from 'motion-v';
 import { ref } from 'vue';
 
 const educations = ref([
@@ -24,13 +25,16 @@ const educations = ref([
         <div class="min-h-[18.3rem] lg:min-h-[20rem] w-[1px] bg-white absolute -z-[1] left-[25%] right-[75%] rounded-t-md"></div>
 
         <ul class="min-h-full w-[60%] lg:w-[50%] ml-[23.3%] lg:ml-[24.5%] my-4 mt-5 flex flex-col gap-5 lg:gap-10 pt-6">
-            <li class="flex flex-row gap-8 items-center" v-for="{ school, graduate, major } in educations">
+            <motion.li class="flex flex-row gap-8 items-center" v-for="{ school, graduate, major } in educations"
+            :initial="{ opacity: 1 }"
+            :animate="{ opacity: [1, 0.7, 1] }"
+            :transition="{ opacity: { duration: Math.floor(Math.random() * 3 + 3), repeat: Infinity, repeatType: 'loop', ease: 'easeInOut' },}">
                 <span class="w-[20px] aspect-square rounded-full bg-white"></span>
                 <div class="bg-[#242424] rounded-xl px-7 py-4 w-full shadow-xl">
                     <h2 class="text-base lg:text-xl font-bold">{{ school }} <span v-if="major" class="text-gray-300">({{ major }})</span></h2>
                     {{ graduate }}
                 </div>
-            </li>
+            </motion.li>
         </ul>
     </section>
 </template>

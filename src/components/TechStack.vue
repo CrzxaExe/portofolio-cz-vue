@@ -1,6 +1,10 @@
+<script setup>
+import { motion } from 'motion-v';
+</script>
+
 <template>
     <div class="grid grid-cols-9 sm:grid-cols-11 md:grid-cols-13 lg:grid-cols-26 gap-1.5 px-3 sm:px-2 md:px-1 lg:px-0">
-        <div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut' } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="js">
                     <g id="js_2">
@@ -11,8 +15,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.02 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="typescript">
                     <g id="typescript_2">
@@ -23,8 +27,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.04 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="python">
                     <g id="python_2">
@@ -49,8 +53,8 @@
                     </linearGradient>
                 </defs>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.06 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="c++">
                     <g id="c++_2">
@@ -75,8 +79,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.08 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="go">
                     <g id="go_2">
@@ -90,8 +94,8 @@
                 </g>
             </svg>
 
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.1 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="html5">
                     <g id="html5_2">
@@ -107,8 +111,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.12 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="rust">
                     <g id="rust_2">
@@ -118,8 +122,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div class="opacity-15">
+        </motion.div>
+        <motion.div class="opacity-15" :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.14 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="dart">
                     <g id="dart_2" clip-path="url(#clip0_790_534)">
@@ -149,8 +153,8 @@
                     </clipPath>
                 </defs>
             </svg>
-        </div>
-        <div class="opacity-15">
+        </motion.div>
+        <motion.div class="opacity-15" :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.16 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="zod">
                     <g id="zod_2">
@@ -166,10 +170,10 @@
                     </g>
                 </g>
             </svg>
-        </div>
+        </motion.div>
 
         <!-- frameworks -->
-        <div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.18 } }">
             <svg width="30" height="30" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="reactjs">
                     <g id="reactjs_2">
@@ -188,8 +192,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.2 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="vuejs">
                     <g id="vuejs_2">
@@ -203,8 +207,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.22 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="mongoose">
                     <g id="mongoose_2">
@@ -235,8 +239,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.24 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="mongodb">
                     <g id="mongodb_2">
@@ -252,8 +256,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.26 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="nextjs2">
                     <g id="nextjs2_2">
@@ -280,8 +284,8 @@
                     </linearGradient>
                 </defs>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.28 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="reactrouter">
                     <g id="reactrouter_2">
@@ -294,8 +298,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.3 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="tailwindcss">
                     <g id="tailwindcss_2">
@@ -305,8 +309,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.32 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="vitejs">
                     <g id="vitejs_2">
@@ -332,8 +336,8 @@
                     </linearGradient>
                 </defs>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.34 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="webassembly">
                     <g id="webassembly_2">
@@ -345,8 +349,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div class="opacity-15">
+        </motion.div>
+        <motion.div class="opacity-15" :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.36 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="sveltejs">
                     <g id="sveltejs_2">
@@ -359,8 +363,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div class="opacity-15">
+        </motion.div>
+        <motion.div class="opacity-15" :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.38 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="webpack">
                     <g id="webpack_2">
@@ -376,8 +380,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div class="opacity-15">
+        </motion.div>
+        <motion.div class="opacity-15" :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.4 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="flutter">
                     <g id="flutter_2">
@@ -408,10 +412,10 @@
                     </linearGradient>
                 </defs>
             </svg>
-        </div>
+        </motion.div>
 
         <!-- tech -->
-        <div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.42 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="android">
                     <g id="android_2">
@@ -421,8 +425,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.44 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="bunjs">
                     <g id="bunjs_2">
@@ -471,8 +475,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.46 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="figma">
                     <g id="figma_2">
@@ -494,8 +498,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.48 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="git">
                     <g id="git_2">
@@ -505,8 +509,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="nodejs">
                     <g id="nodejs_2">
@@ -519,8 +523,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.52 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="npm">
                     <g id="npm_2">
@@ -531,8 +535,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.54 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="postman">
                     <g id="postman_2">
@@ -601,8 +605,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.56 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="vscode">
                     <g id="vscode_2">
@@ -621,8 +625,8 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div class="opacity-15">
+        </motion.div>
+        <motion.div class="opacity-15" :initial="{ scale: 0, transformOrigin: 'center' }" :while-in-view="{ scale: 1, transition: { duration: 0.5, ease: 'easeInOut', delay: 0.58 } }">
             <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="docker">
                     <g id="docker_2">
@@ -660,6 +664,6 @@
                 </g>
             </svg>
 
-        </div>
+        </motion.div>
     </div>
 </template>
